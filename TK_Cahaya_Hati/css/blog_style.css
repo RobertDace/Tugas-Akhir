@@ -1,0 +1,12 @@
+/* File CSS Khusus untuk Halaman Blog */
+
+.card-title {
+    font-family: 'Fredoka One', cursive !important;
+    color: red !important; /* Warna merah agar langsung terlihat */
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif !important;
+    color: blue !important; /* Warna biru agar langsung terlihat */
+    font-size: 16px !important;
+}

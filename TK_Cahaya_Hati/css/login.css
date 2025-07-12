@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #e0f7fa, #b3e5fc);
+}
+.login-container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login-header h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #0277bd;
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+}
+.login-header p {
+    margin: 0 0 2rem 0;
+    color: #777;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.form-group label {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #0288d1;
+}
+input[type="text"], input[type="password"] {
+    padding: 0.8rem;
+    border: 2px solid #b3e5fc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+#error-message {
+    background-color: #ffcdd2;
+    color: #c62828;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1rem; 
+    display: none; /* Tambahkan baris ini */
+}
+.back-to-home {
+    margin-top: 1.5rem;
+}
+.back-to-home a {
+    color: #0288d1;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+.register-link a {
+    color: #0277bd;
+    font-weight: 600;
+    text-decoration: none;
+}

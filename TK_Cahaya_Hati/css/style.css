@@ -1,0 +1,1050 @@
+/* Import font yang lucu */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e0f7fa; /* Latar belakang biru muda */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #0288d1; /* Biru lebih gelap */
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Ditambahkan agar konten nav tidak terlalu lebar di layar besar */
+    margin: 0 auto;
+}
+
+.logo a {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Untuk menyejajarkan menu dengan tombol login */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc80; /* Warna aksen oranye saat disentuh */
+}
+
+/* --- KODE BARU: Styling untuk Tombol Login Dropdown --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-login-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-login-btn:hover {
+    background-color: #f57c00;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden; /* Agar sudutnya rapi */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* --- AKHIR KODE BARU --- */
+
+main {
+    padding: 2rem;
+}
+
+section {
+    padding: 60px 20px;
+    margin: 0 auto 2rem auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+section p {
+    font-size: 1rem; /* Menyamakan ukuran font (standarnya 16px) */
+    line-height: 1.7; /* Menambah spasi antar baris agar lebih mudah dibaca */
+    color: #555; /* Warna abu-abu tua yang lebih lembut untuk teks */
+}
+
+#hero {
+    text-align: center;
+    background: linear-gradient(to right, #4fc3f7, #0288d1);
+    color: white;
+    border-radius: 15px;
+}
+
+#hero h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #0277bd;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #555;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-item {
+    background-color: #b3e5fc;
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #01579b;
+}
+#pendaftaran {
+    text-align: center;
+}
+
+#pendaftaran form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #0288d1;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    padding: 0.8rem;
+    border: 2px solid #b3e5fc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #0288d1;
+}
+
+button[type="submit"] {
+    padding: 1rem;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #f57c00;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #01579b;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* --- Styling untuk FAQ --- */
+#faq {
+    background-color: #f1f8e9;
+}
+
+#faq h2 {
+    color: #558b2f;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.faq-question {
+    font-size: 1.1rem;
+    color: #33691e;
+    margin: 0 0 0.5rem 0;
+    text-align: left;
+}
+
+.faq-answer {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* --- Styling untuk Testimoni --- */
+#testimoni {
+    background-color: #fff9c4;
+}
+
+#testimoni h2 {
+    color: #f57f17;
+}
+
+.testimoni-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.testimoni-card {
+    background-color: #fff;
+    border-left: 5px solid #ffca28;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.testimoni-text {
+    font-style: italic;
+    color: #555;
+    margin: 0 0 1rem 0;
+}
+
+.testimoni-author {
+    text-align: right;
+    font-weight: bold;
+    color: #f57f17;
+    margin: 0;
+}
+
+/* --- Styling untuk Kalender --- */
+#kalender {
+    background-color: #e3f2fd;
+}
+
+#kalender h2 {
+    color: #1565c0;
+}
+
+.kalender-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.kalender-table th, .kalender-table td {
+    border: 1px solid #bbdefb;
+    text-align: left;
+    vertical-align: top;
+    padding: 8px;
+    height: 100px;
+    width: 14%;
+}
+
+.kalender-table th {
+    background-color: #64b5f6;
+    color: white;
+    text-align: center;
+    height: auto;
+    padding: 12px 8px;
+}
+
+.kalender-table td {
+    background-color: #fff;
+}
+
+.kalender-table td:empty {
+    background-color: #f5f5f5;
+}
+
+.kalender-table strong {
+    font-weight: 600;
+}
+
+.activity {
+    font-size: 0.8rem;
+    background-color: #ffcc80;
+    color: #333;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* --- Styling untuk Blog --- */
+#blog-preview {
+    background-color: #fff;
+}
+
+.artikel-preview-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.artikel-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.artikel-card:hover {
+    transform: translateY(-5px);
+}
+
+.artikel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.artikel-card-content {
+    padding: 1.5rem;
+}
+
+.artikel-card-content h3 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #0277bd;
+}
+
+.artikel-card-content p {
+    margin: 0 0 1rem 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn-baca {
+    display: inline-block;
+    background-color: #0288d1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-baca:hover {
+    background-color: #0277bd;
+}
+
+/* Styling untuk halaman blog.html */
+.page-header {
+    background: linear-gradient(to right, #4fc3f7, #0288d1);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.artikel-full {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 2.5rem;
+}
+
+.artikel-full h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.artikel-full .meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.artikel-full img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.artikel-full .artikel-content p {
+    line-height: 1.8;
+    color: #333;
+}
+
+/* --- KODE BARU: Styling untuk CTA Pendaftaran --- */
+/* --- Styling untuk CTA Pendaftaran (Versi Final) --- */
+#cta-pendaftaran {
+    background: linear-gradient(to right, #4fc3f7, #0288d1);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-radius: 15px;
+}
+
+#cta-pendaftaran h2 {
+    color: #ffffff !important; /* PENTING: Warna putih solid untuk judul */
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+#cta-pendaftaran p {
+    color: rgba(255, 255, 255, 0.9); /* Warna putih semi-transparan untuk deskripsi */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-cta:hover {
+    background-color: #f57c00;
+    transform: scale(1.05);
+}
+/* ... (SEMUA KODE CSS ANDA YANG LAMA DARI ATAS SAMPAI BAWAH TETAP DI SINI) ... */
+
+/* --- KODE BARU: Media Queries untuk Responsive Design --- */
+
+/* Aturan untuk Tablet dan di bawahnya (lebar layar maks 768px) */
+@media (max-width: 768px) {
+    /* Sembunyikan menu navigasi utama */
+    .nav-links {
+        display: none;
+    }
+
+    /* Atur agar logo dan tombol login punya ruang */
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    /* Buat kartu artikel dan testimoni jadi 1 kolom */
+    .artikel-preview-container,
+    .testimoni-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Perkecil ukuran judul utama */
+    #hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Aturan untuk HP (lebar layar maks 480px) */
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+    section {
+        padding: 40px 15px;
+    }
+    .logo a {
+        font-size: 1.5rem;
+    }
+    .nav-login-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+/* --- Styling untuk Profil di Sidebar --- */
+.sidebar-profile {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #34495e;
+    margin-bottom: 1rem;
+}
+.sidebar-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #56708b;
+}
+.sidebar-profile h4 {
+    color: white;
+    margin: 10px 0 5px 0;
+}
+.sidebar-profile p {
+    color: #bdc3c7;
+    margin: 0;
+    font-size: 0.9rem;
+    border-bottom: none; /* Hapus border bawah dari P di profil */
+    padding-bottom: 0;
+}
+.logout-area .btn-profil {
+    display: block;
+    text-align: center;
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Preview gambar di form profil */
+.profile-picture-preview {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.profile-picture-preview img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ecf0f1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* --- Styling untuk Galeri Publik --- */
+
+.gallery-item-public img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Styling untuk Slick Carousel di Galeri Publik --- */
+.gallery-container {
+ margin-left: -15px; /* Sesuaikan margin agar tidak ada ruang kosong di sisi kiri */
+ margin-right: -15px; /* Sesuaikan margin agar tidak ada ruang kosong di sisi kanan */
+}
+
+
+
+.gallery-item-slick img {
+ height: 250px;
+ object-fit: cover;
+}
+
+.gallery-item-slick .gallery-item-title {
+ position: absolute;
+ bottom: 0;
+ left: 15px;
+ right: 15px;
+ background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+ color: white;
+ padding: 1rem;
+ font-size: 0.9rem;
+ font-weight: 500;
+ text-align: center;
+}
+
+
+.slick-dots li {
+ display: inline-block;
+ margin: 0 5px;
+}
+
+.slick-dots li button {
+ font-size: 0;
+ line-height: 0;
+ display: block;
+ width: 20px;
+ height: 20px;
+ padding: 5px;
+ cursor: pointer;
+ color: transparent;
+ border: 0;
+ outline: none;
+ background: #ccc;
+ border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+ background: #007bff; /* Warna aktif dot */
+}
+/* --- Penyesuaian untuk Bootstrap Carousel di Beranda --- */
+#galeriCarousel .carousel-item img {
+    height: 500px; /* Atur tinggi gambar carousel */
+    object-fit: cover; /* Membuat gambar mengisi area tanpa distorsi */
+    border-radius: 15px; /* Memberi sudut melengkung agar serasi */
+}
+
+#galeriCarousel .carousel-caption {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); /* Latar belakang gradasi untuk teks */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 1.5rem;
+}
+/* --- Perbaikan Warna Teks & Link --- */
+
+/* Mengatur warna default untuk semua link di dalam main content */
+main a {
+    color: #0288d1; /* Warna biru tema kita */
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #01579b; /* Warna biru lebih gelap saat hover */
+    text-decoration: underline;
+}
+
+/* Mengatur warna spesifik untuk judul di dalam section */
+section h2, section h3 {
+    color: #0277bd !important; /* !important untuk memaksa override style Bootstrap */
+}
+/* --- Menyeragamkan Teks Deskripsi di Halaman Utama --- */
+section p {
+    font-size: 1rem;      /* Ukuran standar (biasanya 16px) */
+    line-height: 1.7;   /* Spasi antar baris agar nyaman dibaca */
+    color: #5a5a5a;      /* Warna abu-abu tua, tidak terlalu pekat */
+}
+/* --- Styling untuk Halaman Blog & Detail Artikel --- */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.blog-post-title {
+    font-family: 'Fredoka One', cursive;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+.blog-post-meta {
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+.blog-post-content {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+/* --- Styling untuk Layout Blog Baru --- */
+.blog-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* Default 1 kolom untuk mobile */
+    gap: 2rem;
+}
+.sidebar-widget {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.sidebar-widget h5 {
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 1rem;
+}
+.breadcrumb-item a {
+    text-decoration: none;
+}
+/* Aturan untuk layar besar (desktop) */
+@media (min-width: 992px) {
+    .blog-layout {
+        grid-template-columns: 2fr 1fr; /* 2 kolom di layar besar */
+    }
+}
+#hero p {
+    color: rgba(255, 255, 255, 0.9); /* Warna putih semi-transparan agar mudah dibaca */
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e0f7fa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* --- HEADER ASLI ANDA --- */
+header {
+    background-color: #0288d1;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo a {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+.nav-links {
+    list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; align-items: center;
+}
+.nav-links a {
+    color: white; text-decoration: none; font-weight: 600; transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffcc80;
+}
+.dropdown {
+    position: relative; display: inline-block;
+}
+.nav-login-btn {
+    background-color: #ff9800; color: white; padding: 10px 20px; border-radius: 5px;
+    text-decoration: none; font-weight: bold; border: none; cursor: pointer; font-family: 'Poppins', sans-serif; font-size: 1rem; transition: background-color 0.3s;
+}
+.nav-login-btn:hover {
+    background-color: #f57c00;
+}
+.dropdown-content {
+    display: none; position: absolute; right: 0; background-color: #f9f9f9;
+    min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; border-radius: 5px; overflow: hidden;
+}
+.dropdown-content a {
+    color: black; padding: 12px 16px; text-decoration: none; display: block; text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- KONTEN HALAMAN --- */
+main {
+    padding: 2rem;
+}
+section {
+    padding: 60px 20px; margin: 0 auto 2rem auto; max-width: 1000px;
+    background-color: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+h2 {
+    font-weight: 600; color: #0277bd; margin-bottom: 2.5rem; text-align: center;
+}
+section p {
+    font-size: 1rem; line-height: 1.7; color: #5a5a5a;
+}
+#hero {
+    text-align: center; background: linear-gradient(to right, #4fc3f7, #0288d1); color: white; border-radius: 15px;
+}
+#hero h1 {
+    font-weight: 700; font-size: 2.8rem;
+}
+#hero p {
+    color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-top: 0.5rem;
+}
+#cta-pendaftaran {
+    background: linear-gradient(to right, #4fc3f7, #0288d1); text-align: center; padding: 3rem 1.5rem; border-radius: 15px;
+}
+#cta-pendaftaran h2 {
+    color: #ffffff !important; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+#cta-pendaftaran p {
+    color: rgba(255, 255, 255, 0.9); max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;
+}
+.btn-cta {
+    display: inline-block; background-color: #ff9800; color: white; padding: 1rem 2.5rem;
+    font-size: 1.2rem; font-weight: bold; text-decoration: none; border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.btn-cta:hover {
+    background-color: #f57c00; transform: scale(1.05);
+}
+/* --- Carousel --- */
+.carousel-wrapper {
+    max-width: 900px; margin: 0 auto;
+}
+#galeriCarousel .carousel-item img {
+    height: 450px; object-fit: cover; border-radius: 15px;
+}
+#galeriCarousel .carousel-caption {
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); border-radius: 0 0 15px 15px; bottom: 0; left: 0; right: 0; padding-bottom: 1.5rem;
+}
+
+/* --- FOOTER BARU --- */
+.footer-baru {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    padding: 3rem 0 0 0;
+}
+.footer-title {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.footer-baru p {
+    color: #bdc3c7;
+    line-height: 1.8;
+}
+.footer-baru ul li {
+    margin-bottom: 0.75rem;
+}
+.footer-baru a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-baru a:hover {
+    color: #ffffff;
+}
+.footer-baru ul i {
+    margin-right: 10px;
+}
+.social-icons a {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255,255,255,0.1);
+    margin-right: 10px; color: #ffffff; font-size: 1.1rem;
+}
+.social-icons a:hover {
+    background-color: #0277bd;
+    color: white;
+}
+.footer-bottom {
+    border-top: 1px solid #34495e; padding: 1.5rem 0; margin-top: 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.9rem; flex-wrap: wrap; gap: 1rem;
+}
+.footer-bottom p {
+    margin: 0;
+}
+/* --- Perbaikan Font untuk Halaman Blog (Final) --- */
+
+/* Menargetkan judul kartu HANYA di halaman blog */
+.blog-page .card-title {
+    font-family: 'Fredoka One', cursive !important;
+    color: #0277bd !important;
+}
+
+/* Menargetkan deskripsi kartu HANYA di halaman blog */
+.blog-page .card-text {
+    font-family: 'Poppins', sans-serif !important;
+    color: #5a5a5a !important;
+    line-height: 1.7 !important;
+}
+
+/* Menargetkan tombol kartu HANYA di halaman blog */
+.blog-page .btn-primary {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+}
+/* Styling untuk Tampilan Status Login di Header */
+.login-display {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Jarak antar elemen */
+}
+
+.welcome-text {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-logout-btn {
+    background-color: #e74c3c; /* Warna merah untuk logout */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-logout-btn:hover {
+    background-color: #c0392b;
+}
+/* Styling untuk Kalender Dinamis */
+.calendar-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.calendar-header h3 {
+    margin: 0;
+    font-family: 'Fredoka One', cursive;
+    color: #333;
+}
+.calendar-header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #0277bd;
+    font-weight: bold;
+}
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.calendar-table th, .calendar-table td {
+    padding: 1rem;
+    border: 1px solid #eee;
+}
+.calendar-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+.calendar-table td {
+    font-weight: 500;
+}
+
+/* Warna untuk event dan hari libur - VERSI BARU LEBIH KONTRAS */
+.calendar-table td.libur-akhir-pekan,
+.calendar-table td.libur-merah {
+    background-color: #e57373; /* Merah lebih pekat */
+    color: #ffffff; /* Teks putih */
+    font-weight: bold;
+    border-radius: 4px; /* Sedikit sudut melengkung */
+}
+.calendar-table td.event-biru {
+    background-color: #3498db; /* Biru lebih pekat */
+    color: #ffffff; /* Teks putih */
+    font-weight: bold;
+    border-radius: 4px;
+}
+.calendar-table td.event-hijau {
+    background-color: #2ecc71; /* Hijau lebih pekat */
+    color: #ffffff; /* Teks putih */
+    font-weight: bold;
+    border-radius: 4px;
+}
+/* Styling untuk Keterangan Kalender */
+.calendar-legend {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+.calendar-legend h4 {
+    margin-bottom: 1rem;
+    font-family: 'Fredoka One', cursive;
+}
+.calendar-legend ul {
+    list-style: none;
+    padding-left: 0;
+}
+.calendar-legend li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+.event-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.event-dot.event-biru { background-color: #3498db; }
+.event-dot.event-hijau { background-color: #2ecc71; }
+.event-dot.event-merah { background-color: #e57373; }
