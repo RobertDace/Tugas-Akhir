@@ -1,0 +1,17 @@
+user : admin     <------- admin role
+pass : admin123 
+----------------
+user : guruA     <------- guru role
+pass : guru123
+
+user : guruB
+pass : guru123
+----------------
+user : ortubudi  <------- wali role
+pass : wali123
+
+user : ortucitra
+pass : ortu123
+
+user : ortulucas
+pass : tes123
